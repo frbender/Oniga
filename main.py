@@ -12,7 +12,7 @@ from pyhap.accessory_driver import AccessoryDriver
 import pyhap.loader as loader
 
 # The below package can be found in the HAP-python github repo under accessories/
-from .Temp import TemperatureSensor
+from Temp import TemperatureSensor
 
 logging.basicConfig(level=logging.INFO)
 
