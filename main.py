@@ -41,5 +41,7 @@ driver.add_accessory(accessory=get_accessory(driver))
 # so that it can gracefully stop the accessory, server and advertising.
 signal.signal(signal.SIGTERM, driver.signal_handler)
 
+driver.setup_message()
+
 # Start it!
 driver.start()
